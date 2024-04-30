@@ -8,11 +8,11 @@ import {DeployERC20} from "../script/DeployERC20.s.sol";
 
 contract TokenTest is Test {
 
-    
-    OurToken public ot;
+
+    OPToken public ot;
     DeployERC20 public deployer;
     function setUp() public {
         deployer = new DeployERC20();
-        ourToken = deployer.run();
+        ot = deployer.run();
     }
 }
